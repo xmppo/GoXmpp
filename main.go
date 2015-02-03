@@ -16,6 +16,8 @@ func main() {
 		SSL:          false, //if setting with default when you install jabberd2
 	}
 
+	my.Connect()
+
 	go func() {
 		for {
 			from, chat, err := my.GetMessage()
